@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>04_作用域_面试题2</title>
+</head>
+<body>
+<script type="text/javascript">
+  var fn = function () {
+    console.log(fn)
+  }
+  fn()
+
+  var obj = {
+    fn2: function () {
+     console.log(fn2)
+     //console.log(this.fn2)
+    }
+  }
+  obj.fn2()
+</script>
+</body>
+</html>

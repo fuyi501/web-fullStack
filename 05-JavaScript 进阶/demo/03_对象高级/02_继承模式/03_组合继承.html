@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>03_组合继承</title>
+</head>
+<body>
+<!--
+方式3: 原型链+借用构造函数的组合继承
+1. 利用原型链实现对父类型对象的方法继承
+2. 利用super()借用父类型构建函数初始化相同属性
+-->
+<script type="text/javascript">
+  function Person(name, age) {
+    this.name = name
+    this.age = age
+  }
+  Person.prototype.setName = function (name) {
+    this.name = name
+  }
+
+  function Student(name, age, price) {
+    Person.call(this, name, age)  // 为了得到属性
+    this.price = price
+  }
+  Student.prototype = new Person() // 为了能看到父类型的方法
+  Student.prototype.constructor = Student //修正constructor属性
+  Student.prototype.setPrice = function (price) {
+    this.price = price
+  }
+
+  var s = new Student('Tom', 24, 15000)
+  s.setName('Bob')
+  s.setPrice(16000)
+  console.log(s.name, s.age, s.price)
+
+</script>
+</body>
+</html>

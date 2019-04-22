@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>04_函数</title>
+</head>
+<body>
+<!--
+1. 什么是函数?
+  * 实现特定功能的n条语句的封装体
+  * 只有函数是可以执行的, 其它类型的数据不能执行
+2. 为什么要用函数?
+  * 提高代码复用
+  * 便于阅读交流
+3. 如何定义函数?
+  * 函数声明
+  * 表达式
+4. 如何调用(执行)函数?
+  * test(): 直接调用
+  * obj.test(): 通过对象调用
+  * new test(): new调用
+  * test.call/apply(obj): 临时让test成为obj的方法进行调用
+-->
+<script type="text/javascript">
+  /*
+  编写程序实现以下功能需求:
+    1. 根据年龄输出对应的信息
+    2. 如果小于18, 输出: 未成年, 再等等!
+    3. 如果大于60, 输出: 算了吧!
+    4. 其它, 输出: 刚好!
+  */
+  function showInfo (age) {
+    if(age<18) {
+      console.log('未成年, 再等等!')
+    } else if(age>60) {
+      console.log('算了吧!')
+    } else {
+      console.log('刚好!')
+    }
+  }
+
+  showInfo(17)
+  showInfo(20)
+  showInfo(65)
+
+  function fn1 () { //函数声明
+    console.log('fn1()')
+  }
+  var fn2 = function () { //表达式
+    console.log('fn2()')
+  }
+
+  fn1()
+  fn2()
+
+  var obj = {}
+  function test2 () {
+    this.xxx = 'atguigu'
+  }
+  // obj.test2()  不能直接, 根本就没有
+  test2.call(obj) // obj.test2()   // 可以让一个函数成为指定任意对象的方法进行调用
+  console.log(obj.xxx)
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

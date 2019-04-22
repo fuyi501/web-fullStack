@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>01_数据类型</title>
+</head>
+<body>
+<!--
+1. 分类
+  * 基本(值)类型
+    * String: 任意字符串
+    * Number: 任意的数字
+    * boolean: true/false
+    * undefined: undefined
+    * null: null
+  * 对象(引用)类型
+    * Object: 任意对象
+    * Function: 一种特别的对象(可以执行)
+    * Array: 一种特别的对象(数值下标, 内部数据是有序的)
+2. 判断
+  * typeof:
+    * 可以判断: undefined/ 数值 / 字符串 / 布尔值 / function
+    * 不能判断: null与object  object与array
+  * instanceof:
+    * 判断对象的具体类型
+  * ===
+    * 可以判断: undefined, null
+-->
+
+<script type="text/javascript">
+  //1. 基本
+  // typeof返回数据类型的字符串表达
+  var a
+  console.log(a, typeof a, typeof a==='undefined',a===undefined )  // undefined 'undefined' true true
+  console.log(undefined==='undefined')
+  a = 4
+  console.log(typeof a==='number')
+  a = 'atguigu'
+  console.log(typeof a==='string')
+  a = true
+  console.log(typeof a==='boolean')
+  a = null
+  console.log(typeof a, a===null) // 'object'
+
+  console.log('-----------------')
+  //2. 对象
+  var b1 = {
+    b2: [1, 'abc', console.log],
+    b3: function () {
+      console.log('b3')
+      return function () {
+        return 'xfzhang'
+      }
+    }
+  }
+
+  console.log(b1 instanceof Object, b1 instanceof Array) // true  false
+  console.log(b1.b2 instanceof Array, b1.b2 instanceof Object) // true true
+  console.log(b1.b3 instanceof Function, b1.b3 instanceof Object) // true true
+
+  console.log(typeof b1.b2, '-------') // 'object'
+
+  console.log(typeof b1.b3==='function') // true
+
+  console.log(typeof b1.b2[2]==='function')
+  b1.b2[2](4)
+  console.log(b1.b3()())
+
+
+
+  /*var obj = {
+    name: 'Tom',
+    age: 12
+  }
+  function test () {
+    var a = 3
+  }
+  var arr = [3, 'abc']
+  arr[1]*/
+
+</script>
+</body>
+</html>
