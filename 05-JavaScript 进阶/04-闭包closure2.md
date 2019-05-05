@@ -78,13 +78,13 @@ var name = "The Window";　　
 var object = {　　　　
   name : "My Object",
   getNameFunc : function(){
-    var that = this;           		 
+    var that = this;
     console.log(that.name);   // My Object
-    return function(){    
+    return function(){
       console.log(this.name); // The Window
       console.log(that.name); // My Object　
       return that.name;
-    };　　　　
+    };
   }　　
 };　　
   
