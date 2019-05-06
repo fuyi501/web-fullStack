@@ -21,8 +21,7 @@ Web 全栈学习笔记，对标 Web 全栈工程师，涵盖基础、进阶、�
 
 * [开课吧web全栈架构师第四期](https://www.bilibili.com/video/av45459092)
 
-* web全栈开发资料
-链接:https://pan.baidu.com/s/1a9XmBANXpm0yUhkwKPSAjA  密码:aq02
+* web全栈开发资料 链接:https://pan.baidu.com/s/1a9XmBANXpm0yUhkwKPSAjA  密码:aq02
 
 ## 推荐仓库
 
