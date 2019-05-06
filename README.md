@@ -2,7 +2,7 @@
 
 Web 全栈学习笔记，对标 Web 全栈工程师，涵盖基础、进阶、框架、数据库、服务器等，致力于详细的前端学习图文教程。
 
-:wave: 持续更新中。。。 :thumbsup: :thumbsup: :thumbsup:
+:point_right: 持续更新中。。。 :thumbsup: :thumbsup: :thumbsup:
 
 ## 前端工具
 
@@ -21,21 +21,22 @@ Web 全栈学习笔记，对标 Web 全栈工程师，涵盖基础、进阶、�
 
 * [开课吧web全栈架构师第四期](https://www.bilibili.com/video/av45459092)
 
-## 推荐文章
+* web全栈开发资料
+链接:https://pan.baidu.com/s/1a9XmBANXpm0yUhkwKPSAjA  密码:aq02
 
-* [专门探索 JavaScript 及其所构建的组件的系列文章](https://segmentfault.com/a/1190000017352941)
+## 推荐仓库
 
-## 推荐专栏
+* [qianguyihao/Web](https://github.com/qianguyihao/Web) Web前端入门和进阶学习笔记，超详细的前端学习图文教程。
+* [mqyqingfeng/Blog](https://github.com/mqyqingfeng/Blog) 冴羽写博客的地方，预计写四个系列：JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。
+* [azl397985856/leetcode](https://github.com/azl397985856/leetcode) leetcode题解，记录自己的leetcode解题之路。
+
+## 推荐专栏与博客
 
 * [Coderfei](https://juejin.im/user/5c13283de51d4512410edbfe/activities)
 * [Fundebug](https://juejin.im/user/587d9f69b123db4d5e7ed9e3)
 * [冴羽](https://juejin.im/user/58e4b9b261ff4b006b3227f4/posts)
+* [AlloyTeam](http://www.alloyteam.com/)
 
-## 推荐仓库
+## 推荐文章
 
-* [qianguyihao/Web](https://github.com/qianguyihao/Web) 
-Web前端入门和进阶学习笔记，超详细的前端学习图文教程。
-* [mqyqingfeng/Blog](https://github.com/mqyqingfeng/Blog)
-冴羽写博客的地方，预计写四个系列：JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。
-* [azl397985856/leetcode](https://github.com/azl397985856/leetcode)
-leetcode题解，记录自己的leetcode解题之路。
+* [专门探索 JavaScript 及其所构建的组件的系列文章](https://segmentfault.com/a/1190000017352941)
