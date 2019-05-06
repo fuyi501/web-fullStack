@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+    <style>
+      #container{
+        width: 100%; 
+        height: 200px; 
+        line-height: 200px; 
+        text-align: center; color: 
+        #fff; background-color: #444; 
+        font-size: 30px;
+      }
+    </style>
+	</head>
+	<body>
+    <div id="container"></div>
+    <script>
+      var count = 1;
+      var container = document.getElementById('container');
+
+      function getUserAction(e) {
+        
+        // console.log(this)
+        // console.log(e)
+        container.innerHTML = count++;
+      };
+
+      // container.onmousemove = getUserAction // 原始
+      // container.onmousemove = debounce1(getUserAction, 1000); // 第一版
+      // container.onmousemove = debounce2(getUserAction, 1000); // 第二版
+      // container.onmousemove = debounce3(getUserAction, 1000); // 第三版
+      // 第四版 可配置, 可扩展, true 为开始触发, false 为结束触发
+      container.onmousemove = debounce4(getUserAction, 1000, false); 
+    
+      // 中间的方法, 通过代理控制
+      // 第一版
+      function debounce1(fn, waitTime) {
+        var timeout;
+        
+        return function () {
+          clearTimeout(timeout)
+          timeout = setTimeout(fn, waitTime)
+        }
+      }
+      
+      // 第二版
+      function debounce2(fn, waitTime) {
+        var timeout;
+        
+        return function () {
+          console.log(this)
+          var that = this
+          
+          clearTimeout(timeout)
+          timeout = setTimeout(function () {
+            fn.apply(that)
+          }, waitTime)
+        }
+      }
+      
+      // 第三版
+      function debounce3(fn, waitTime) {
+        var timeout;
+        
+        return function () {
+          console.log(this)
+          var that = this
+          var args = arguments
+          
+          clearTimeout(timeout)
+          timeout = setTimeout(function () {
+            fn.apply(that, args)
+          }, waitTime)
+        }
+      }
+      
+      // 第四版 可配置, 可扩展, true 为开始触发, false 为结束触发
+      function debounce4(fn, waitTime, flag) {
+        var timeout;
+        
+        return function () {
+          // console.log(this) // 这个 this 是绑定到 container 这个对象的
+          var that = this
+          var args = arguments
+          
+          if(flag) { // 开始触发
+            var callNow = !timeout
+            clearTimeout(timeout)
+            timeout = setTimeout(function () {
+              timeout = null;
+            }, waitTime)
+            if(callNow) {
+              fn.apply(this, args)  // 这里不需要写成 that 了, 考虑下为什么？
+            }
+          } else { // 结束触发
+            clearTimeout(timeout)
+            timeout = setTimeout(function () {
+              fn.apply(that, args)
+            }, waitTime)
+          }
+        }
+      }
+    </script>
+	</body>
+</html>
