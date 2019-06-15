@@ -2,7 +2,7 @@
 
 Web 全栈学习笔记，对标 Web 全栈工程师，涵盖基础、进阶、框架、数据库、服务器等，致力于详细的前端学习图文教程。
 
-:point_right: 持续更新中。。。 :thumbsup: :thumbsup: :thumbsup:
+:point_right: 两个月停更，现在说什么每天两篇文章不能少，持续更新。。。 :thumbsup: :thumbsup: :thumbsup:
 
 ## 前端工具
 
