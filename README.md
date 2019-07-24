@@ -1,3 +1,18 @@
+---
+home: true
+heroImage: /javascript.gif
+actionText: 开始 →
+actionLink: /start
+features:
+- title: 简洁至上
+  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+- title: Vue驱动
+  details: 享受 Vue + webpack 的开发体验，可以在 Markdown 中使用 Vue 组件，又可以使用 Vue 来开发自定义主题。
+- title: 高性能
+  details: VuePress 会为每个页面预渲染生成静态的 HTML，同时，每个页面被加载的时候，将作为 SPA 运行。
+footer: MIT Licensed | Copyright © 2018-present Evan You
+---
+
 # 项目介绍
 
 Web 全栈学习笔记，致力于做一个 Web 全栈工程师，涵盖基础、进阶、框架、数据库、服务器等，致力于详细的前端学习图文教程。
@@ -9,6 +24,14 @@ Web 全栈学习笔记，致力于做一个 Web 全栈工程师，涵盖基础�
 - 01-Git的使用
 - 02-VS Code的使用
 - codepen
+
+## 前端面试
+
+https://muyiy.vip/blog/
+
+https://github.com/LuoShengMen/StudyNotes
+
+https://github.com/woai3c/Front-end-basic-knowledge
 
 ## 推荐视频
 
