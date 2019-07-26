@@ -1,4 +1,4 @@
-# JS简介
+# JavaScript 简介
 
 ## JavaScript背景
 
