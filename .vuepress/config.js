@@ -6,9 +6,26 @@ module.exports = {
     // editLinks: true,
     // editLinkText: '编辑代码',
     sidebarDepth: 2,
-    nav: [{
+    nav: [
+      {
         text: '主页',
         link: '/',
+      },
+      {
+        text: '快速开始',
+        link: '/about/',
+      },
+      {
+        text: '收藏',
+        link: '/16-收藏/',
+      },
+      {
+        text: '面试',
+        link: '/15-面试/',
+      },
+      {
+        text: 'LeetCode',
+        link: '/18-LeetCode/',
       },
       {
         text: '前端必备',
@@ -27,6 +44,10 @@ module.exports = {
           {
             text: 'JavaScript 基础',
             link: '/04-JavaScript 基础/'
+          },
+          {
+            text: 'JavaScript 进阶',
+            link: '/05-JavaScript 进阶/'
           },
         ]
       },
@@ -65,6 +86,7 @@ module.exports = {
       '/01-HTML 基础/': genSidebarConfig('HTML 基础'),
       '/02-CSS 基础/': genSidebarConfig('CSS 基础'),
       '/04-JavaScript 基础/': genSidebarConfig('JavaScript 基础'),
+      '/05-JavaScript 进阶/': genSidebarConfig('JavaScript 进阶'),
     },
   }
 }
@@ -107,6 +129,16 @@ function genSidebarConfig(title) {
         '',
         '02-数据类型&类型转换&运算符',
         '14-BOM浏览器对象模型',
+      ]
+    }]
+  } else if (title === 'JavaScript 进阶') {
+    return [{
+      title,
+      collapsable: false,
+      children: [
+        '',
+        '01-原型与原型链',
+        '02-执行上下文与执行上下文栈',
       ]
     }]
   } else if (title === '') {
