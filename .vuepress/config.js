@@ -3,6 +3,7 @@ module.exports = {
   description: 'web?全栈工程师进阶之路',
   themeConfig: {
     repo: 'fuyi501/web-fullStack',
+    lastUpdated: '最近更新', // string | boolean
     // editLinks: true,
     // editLinkText: '编辑代码',
     sidebarDepth: 2,
@@ -16,19 +17,7 @@ module.exports = {
         link: '/about/',
       },
       {
-        text: '收藏',
-        link: '/16-收藏/',
-      },
-      {
-        text: '面试',
-        link: '/15-面试/',
-      },
-      {
-        text: 'LeetCode',
-        link: '/18-LeetCode/',
-      },
-      {
-        text: '前端必备',
+        text: '全栈必备',
         items: [{
             text: '前端工具',
             link: '/00-前端工具/'
@@ -49,35 +38,48 @@ module.exports = {
             text: 'JavaScript 进阶',
             link: '/05-JavaScript 进阶/'
           },
+          {
+            text: '数据库',
+            items: [{
+                text: 'MySQL',
+                link: '/09-MySQL/'
+              },
+              {
+                text: 'MongoDB',
+                link: '/10-MongoDB/'
+              },
+              {
+                text: 'Redis',
+                link: '/11-Redis/'
+              }
+            ]
+          },
+          {
+            text: '后端',
+            items: [
+              {
+                text: 'Node.js',
+                link: '/07-Node.js/'
+              },
+              {
+                text: 'Nginx',
+                link: '/12-Nginx/'
+              }
+            ]
+          },
         ]
       },
+      // {
+      //   text: '面试',
+      //   link: '/15-面试/',
+      // },
       {
-        text: '数据库',
-        items: [{
-            text: 'MySQL',
-            link: '/09-MySQL/'
-          },
-          {
-            text: 'MongoDB',
-            link: '/10-MongoDB/'
-          },
-          {
-            text: 'Redis',
-            link: '/11-Redis/'
-          }
-        ]
+        text: 'LeetCode',
+        link: '/18-LeetCode/',
       },
       {
-        text: '后端',
-        items: [{
-            text: 'Node.js',
-            link: '/07-Node.js/'
-          },
-          {
-            text: 'Nginx',
-            link: '/12-Nginx/'
-          }
-        ]
+        text: '收藏',
+        link: '/16-收藏/',
       }
     ],
     sidebar: {
