@@ -10,14 +10,6 @@ Web 全栈学习笔记，致力于做一个 Web 全栈工程师，涵盖基础�
 - 02-VS Code的使用
 - codepen
 
-## 前端面试
-
-https://muyiy.vip/blog/
-
-https://github.com/LuoShengMen/StudyNotes
-
-https://github.com/woai3c/Front-end-basic-knowledge
-
 ## 推荐视频
 
 * [高质量HTML与CSS基础（共103讲）](https://www.bilibili.com/video/av34069180)
