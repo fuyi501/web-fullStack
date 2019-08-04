@@ -18,7 +18,8 @@ module.exports = {
       },
       {
         text: '全栈必备',
-        items: [{
+        items: [
+          {
             text: '前端工具',
             link: '/00-前端工具/'
           },
@@ -37,6 +38,10 @@ module.exports = {
           {
             text: 'JavaScript 进阶',
             link: '/05-JavaScript 进阶/'
+          },
+          {
+            text: '数据结构与算法',
+            link: '/14-数据结构与算法/'
           },
           {
             text: '数据库',
@@ -66,7 +71,7 @@ module.exports = {
                 link: '/12-Nginx/'
               }
             ]
-          },
+          }
         ]
       },
       // {
@@ -89,6 +94,7 @@ module.exports = {
       '/02-CSS 基础/': genSidebarConfig('CSS 基础'),
       '/04-JavaScript 基础/': genSidebarConfig('JavaScript 基础'),
       '/05-JavaScript 进阶/': genSidebarConfig('JavaScript 进阶'),
+      '/14-数据结构与算法/': genSidebarConfig('数据结构与算法'),
     },
   }
 }
@@ -141,6 +147,17 @@ function genSidebarConfig(title) {
         '',
         '01-原型与原型链',
         '02-执行上下文与执行上下文栈',
+      ]
+    }]
+  } else if (title === '数据结构与算法') {
+    return [{
+      title,
+      collapsable: false,
+      children: [
+        '',
+        '01-JS数据结构之数组',
+        '02-JS数据结构之栈',
+        '03-JS数据结构之队列',
       ]
     }]
   } else if (title === '') {
