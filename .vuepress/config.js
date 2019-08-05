@@ -94,6 +94,7 @@ module.exports = {
       '/02-CSS 基础/': genSidebarConfig('CSS 基础'),
       '/04-JavaScript 基础/': genSidebarConfig('JavaScript 基础'),
       '/05-JavaScript 进阶/': genSidebarConfig('JavaScript 进阶'),
+      '/09-MySQL/': genSidebarConfig('MySQL'),
       '/14-数据结构与算法/': genSidebarConfig('数据结构与算法'),
     },
   }
@@ -158,6 +159,15 @@ function genSidebarConfig(title) {
         '01-JS数据结构之数组',
         '02-JS数据结构之栈',
         '03-JS数据结构之队列',
+      ]
+    }]
+  } else if (title === 'MySQL') {
+    return [{
+      title,
+      collapsable: false,
+      children: [
+        '',
+        '01-MySQL基本操作',
       ]
     }]
   } else if (title === '') {
