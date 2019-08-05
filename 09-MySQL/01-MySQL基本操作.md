@@ -1,26 +1,26 @@
 # MySQL基本操作
+
 ```
 $ mysql -u root -p
 ```
-`-u` 用户名，`-p` 输入密码， `-h` 主机名， `-P` 端口，
-`mysql --help` 命令行选项和参数列表
+`-u` 用户名，`-p` 输入密码， `-h` 主机名， `-P` 端口，`mysql --help` 查看帮助
 
 连接到数据库需要：主机名（本地为localhost）、端口（如果使用默认端口3306之外的端口）、合法的用户名、用户口令（如果需要）
 
-可能需要root权限
-
 ## 使用MySQL
-下载create.sql和populate.sql两个sql脚本文件，其中，create.sql包含创建6个数据库表的MySQL语句，populate.sql包含用来填充这些表的INSERT语句。执行下列操作：
+
+下载 `create.sql` 和 `populate.sql` 两个 `sql` 脚本文件，其中，`create.sql` 包含创建6个数据库表的MySQL语句，`populate.sql` 包含用来填充这些表的INSERT语句。执行下列操作：
+
 ```sql
 --创建数据库
-CREATE DATABASE crashcourse；
+CREATE DATABASE crashcourse
 --使用数据库
 --必须先使用USE打开数据库，才能读取其中的数据。
-USE crashcourse;
+USE crashcourse
 --执行sql脚本
 --需要指定文件的完整路径
---先执行create.sql，再执行populate.sql
-SOURCE ~/create.sql;
+--先执行 create.sql，再执行 populate.sql
+SOURCE ~/create.sql
 SOURCE ~/populate.sql
 ```
 以上为准备工作。
