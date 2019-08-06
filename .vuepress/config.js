@@ -168,6 +168,8 @@ function genSidebarConfig(title) {
       children: [
         '',
         '01-MySQL基本操作',
+        '02-数据过滤',
+        '03-用正则表达式进行搜索',
       ]
     }]
   } else if (title === '') {

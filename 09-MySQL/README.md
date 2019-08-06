@@ -91,3 +91,4 @@ ID|单词|音标|  |
  4 | order by |  | 排序；排序依据；分组排序
  5 | desc(descending) | 美: [dɪ'sendɪŋ] <br> 英: [dɪ'sendɪŋ] | 降序；描述；降序排列；递减
  6 | asc(ascending) | 美: [ə'sendɪŋ] <br> 英: [ə'sendɪŋ] | 升序；递增
+ 7 | regexp |  | 正则表达式
