@@ -3,7 +3,7 @@ module.exports = {
   description: 'web?全栈工程师进阶之路',
   themeConfig: {
     repo: 'fuyi501/web-fullStack',
-    lastUpdated: '最近更新', // string | boolean
+    // lastUpdated: '最近更新', // string | boolean
     // editLinks: true,
     // editLinkText: '编辑代码',
     sidebarDepth: 2,
@@ -170,6 +170,7 @@ function genSidebarConfig(title) {
         '01-MySQL基本操作',
         '02-数据过滤',
         '03-用正则表达式进行搜索',
+        '04-计算字段与数据处理函数',
       ]
     }]
   } else if (title === '') {
