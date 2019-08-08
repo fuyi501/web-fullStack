@@ -159,6 +159,8 @@ function genSidebarConfig(title) {
         '01-JS数据结构之数组',
         '02-JS数据结构之栈',
         '03-JS数据结构之队列',
+        '04-JS数据结构之链表',
+        '05-JS数据结构之集合',
       ]
     }]
   } else if (title === 'MySQL') {
