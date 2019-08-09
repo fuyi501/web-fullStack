@@ -1,8 +1,5 @@
 # 简介
 
+## 参考链接
 
-1. JS 数据结构之数组
-
-![算法知识脑图](./abc.jpg)
-
-<img src="./abc.jpg" width="400" height="600">
+[https://www.jianshu.com/p/38853c044156](https://www.jianshu.com/p/38853c044156)
