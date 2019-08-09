@@ -161,6 +161,7 @@ function genSidebarConfig(title) {
         '03-JS数据结构之队列',
         '04-JS数据结构之链表',
         '05-JS数据结构之集合',
+        '06-JS数据结构之字典',
       ]
     }]
   } else if (title === 'MySQL') {
