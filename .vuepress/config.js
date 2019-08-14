@@ -74,10 +74,10 @@ module.exports = {
           }
         ]
       },
-      // {
-      //   text: '面试',
-      //   link: '/15-面试/',
-      // },
+      {
+        text: '面试',
+        link: '/15-面试/',
+      },
       {
         text: 'LeetCode',
         link: '/18-LeetCode/',
@@ -96,6 +96,7 @@ module.exports = {
       '/05-JavaScript 进阶/': genSidebarConfig('JavaScript 进阶'),
       '/09-MySQL/': genSidebarConfig('MySQL'),
       '/14-数据结构与算法/': genSidebarConfig('数据结构与算法'),
+      '/15-面试/': genSidebarConfig('面试'),
     },
   }
 }
@@ -176,6 +177,16 @@ function genSidebarConfig(title) {
         '04-计算字段与数据处理函数',
         '05-汇总与分组数据',
         '06-使用子查询',
+        '07-联结表',
+      ]
+    }]
+  } else if (title === '面试') {
+    return [{
+      title,
+      collapsable: false,
+      children: [
+        '',
+        '01-面试题1',
       ]
     }]
   } else if (title === '') {
