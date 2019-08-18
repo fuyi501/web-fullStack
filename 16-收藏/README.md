@@ -19,3 +19,6 @@
 9. [一个合格(优秀)的前端都应该阅读这些文章](https://juejin.im/post/5d387f696fb9a07eeb13ea60?utm_source=gold_browser_extension)
 
 10. [如何优雅的处理图片异常](https://juejin.im/post/5d3e4304f265da1b8608cee5?utm_source=gold_browser_extension)
+
+
+81570020820394
